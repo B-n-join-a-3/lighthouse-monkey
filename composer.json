@@ -1,0 +1,38 @@
+{
+    "name": "bnanan/lighthouse-monkey",
+    "type": "library",
+    "description": "A tool to automate your Lighthouse boilerplate code writing",
+    "keywords": [
+        "graphql",
+        "laravel",
+        "laravel-graphql"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Roth Andersen",
+            "email": "oscarrothandersen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">= 8",
+        "illuminate/support": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
+        "webonyx/graphql-php": "^14.7"
+    },
+    "sort-packages": true,
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "graphql": "Nuwave\\Lighthouse\\GraphQL"
+            },
+            "providers": [
+                "Bnanan\\LighthouseMonkey\\LighthouseMonkeyServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Bnanan\\LighthouseMonkey\\": "src/"
+        }
+    }
+}

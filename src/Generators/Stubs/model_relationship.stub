@@ -1,0 +1,8 @@
+    /**
+     * @return {{ relationClass }}
+     */
+    public function {{ relation }}(): {{ relationClass }}
+    {
+        return $this->{{ relationMethod }}({{ targetClass }}::class{{ foreignId }});
+    }
+
